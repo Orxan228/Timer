@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 80vh;
+    background-image:url("../images/bbgw.gif");
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    /* background: rgb(35,25,66);
+    background: linear-gradient(0deg, rgba(35,25,66,1) 0%, rgba(76,56,173,1) 50%, rgba(35,25,66,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.timer{
+    width: 100%;
+    margin: 200px 0;
+}
+.timer___wrapper{
+    width: 75%;
+    padding: 100px 0;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: #450a8a7a;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.timer___wrapper___nums{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+.timer___wrapper___nums--item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 30px;
+}
+.timer___wrapper___nums--elem{
+    font-family: digital;
+    font-size: 60px;
+    color: #231942;
+}
+.timer___wrapper___nums--item--wrap{
+    width: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6f4fd1;
+    border-radius: 15px;
+    
+}
+.timer___wrapper___nums--txt{
+    font-size: 20px;
+    font-family: dosis;
+    color: #6f4fd1;
+    font-weight: 700;
+}
+.timer___wrapper___nums--colon{
+    font-size: 70px;
+    color: #662e9b;
+}
+.timer___wrapper___control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.timer___wrapper___control .startBtn{
+    background-color: #662e9b;
+}
+.timer___wrapper___control .startBtn:hover{
+    background-color: #36ca63;
+    transition: linear 0.4s ;
+}
+.timer___wrapper___control .stopBtn{
+    background-color: #662e9b;
+}
+.timer___wrapper___control .stopBtn:hover{
+    background-color: #ba181b;
+    transition: linear 0.4s ;
+}
+.timer___wrapper___control .pauseBtn{
+    background-color: #662e9b;
+}
+.timer___wrapper___control .pauseBtn:hover{
+    background-color: #008bf8;
+    transition: linear 0.4s ;
+}
+.timer___wrapper___control--btn{
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+@font-face {
+    font-family: digital;
+    src: url(../fonts/Digital\ Dismay.otf);
+}
+@font-face {
+    font-family: dosis;
+    src: url(../fonts/Dosis-VariableFont_wght.ttf);
+}
